@@ -1,5 +1,4 @@
-# assignment1-almogs575
-assignment1-almogs575 created by GitHub Classroom
+# assignment1-Almog Sarafian
 
 Almog Sarafian
-ID 305069577
+ID - 305069577
