@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Gates</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.css">
+ <link rel="stylesheet" href="style.css">
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.js"></script>
+ 
+</head>
+<body>
+  
+<header>
+  <div class="container">
+    <div id="branding">
+      <h1><span class="highlight">Open</span> Gates</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#photos">My Photos</a></li>
+        <li><a href="#playlist">My Playlist</a></li>
+        <li><a href="#like">Follow Me</a></li>
+        <li><a href="#qrcoder">QR Code</a></li>
+        <li><a href="#spa">Q&A</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<div id="about">
+  <h2>Me</h2>
+  <p>Hello! My name is William Henry Gates III, I'm 64 years old. Born and raised in Seattle, Washington.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis esse adipisci dolorum ad officiis corporis
+    fugiat earum molestias nihil sint ea sequi repudiandae distinctio odit excepturi eos, illum saepe pariatur facere
+    temporibus dolor blanditiis quis minus harum! Sequi placeat vero, fuga minus, repellat iusto molestias voluptates,
+    quisquam nemo deleniti eligendi incidunt eum nostrum! Fugiat in ullam officia totam molestias neque, sunt quae alias
+    impedit necessitatibus pariatur officiis cum iste recusandae eos sapiente qui quaerat aut nemo nesciunt quis vitae?
+    Rerum quos architecto distinctio sint numquam vel quaerat nemo, modi similique maiores doloremque est iusto nulla
+    voluptas quidem consequatur autem quo!</p>
+</div>
+
+<div id="photos">
+  <h2>Awkward</h2>
+  <img src="img/1.jpg">
+  <img src="img/22.jpg">
+  <img src="img/33.jpg">
+</div>
+
+<div id="playlist">
+  <h2>To Concentrate</h2>
+  <br>
+  <div id="iframe-container1">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLLLPvt8t1Z5WCjiceHqOGJwrIK5zboNed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  </div>
+
+<div id="like">
+  <h2>Follow Me</h2>
+  <br>
+  <div id="iframe-container2">
+  <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FBillGates%2F&width=450&layout=standard&action=like&size=small&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+</div>
+</div>
+
+<div id="qrcoder">
+  <h2>QR</h2>
+</div>
+
+<div id="spa">
+  <h2>Web Q&A</h2>
+  <ul>
+        <li>Three main differents between web 1,2 and 3:</li>
+          <ul>
+            <h1>Web 1</h1>
+            <li>
+              It is the “readable” phrase of the World Wide Web with flat data. In Web 1.0, there is only limited interaction between sites and web users. Web 1.0 is simply an information portal where users passively receive information without being given the opportunity to post reviews, comments, and feedback.</li>
+              <h1>Web 2</h1>
+            <li>It is the “writable” phrase of the World Wide Web with interactive data. Unlike Web 1.0, Web 2.0 facilitates interaction between web users and sites, so it allows users to interact more freely with each other. Web 2.0 encourages participation, collaboration, and information sharing. Examples of Web 2.0 applications are Youtube, Wiki, Flickr, Facebook, and so on.</li>
+            <h1>Web 3</h1>
+            <li>It is the “executable” phrase of Word Wide Web with dynamic applications, interactive services, and “machine-to-machine” interaction. Web 3.0 is a semantic web which refers to the future. In Web 3.0, computers can interpret information like humans and intelligently generate and distribute useful content tailored to the needs of users</li>
+          </ul>
+          <br>
+          <li>Side effects of drugs, Use Cases(Web 1,2 and 3):</li>
+          <ul>
+            <li>asd</li>
+            <li>asd</li>
+            <li>asd</li>
+          </ul>
+  </ul>
+
+</div>
+
+<div id="contact">
+  <h2>Write Me</h2>
+  <div class="contact-form">
+    <form id="contact-form" method="POST" action="mailto:someone@example.com" enctype="text/plain">
+      <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+      <br>
+      <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+      <br>
+      <div class="emojicontainer">
+      <textarea id="mytext" name="message" class="form-control" placeholder="Message" rows="4"></textarea>
+    </div>
+      <script>
+        $("#mytext").emojioneArea({
+      pickerPosition:"right"
+        });
+      </script>
+      <br>
+      <input type="submit" class="form-control sumbit" value="SEND MESSAGE">
+    </form>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  $(function () {
+    $("#nav a").click(function (e) {
+      e.preventDefault();
+      $('html,body').scrollTo(this.hash, this.hash);
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(document).scroll(function () {
+    $('#menu').toggle($(this).scrollTop() > 1000)
+  });​
+</script>
+
+
+<footer>
+  <br>
+  <br>
+  Refferences:
+  <br>
+  1.
+  <br>
+  2.
+  <br>
+  3.
+  <br>
+  <br>
+
+</footer>
+</body>
+
+</html>
