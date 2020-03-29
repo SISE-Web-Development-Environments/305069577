@@ -117,13 +117,13 @@
   padding-top: 0px;
 " >Write Me</h2>
   <div class="contact-form">
-    <form id="contact-form" method="POST" action="mailto:someone@example.com" enctype="text/plain">
+    <form id="contact-form" method="GET" action="mailto:almogs575@gmail.com" enctype="text/plain">
       <input name="name" type="text" class="form-control" placeholder="Your Name" required>
       <br>
-      <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+      <input name="subject" type="email" class="form-control" placeholder="Your Email" required>
       <br>
       <div class="emojicontainer">
-      <textarea id="mytext" name="message" class="form-control" placeholder="Message" rows="4"></textarea>
+      <textarea id="mytext" name="body" class="form-control" placeholder="Message" rows="4"></textarea>
     </div>
       <script>
         $("#mytext").emojioneArea({
